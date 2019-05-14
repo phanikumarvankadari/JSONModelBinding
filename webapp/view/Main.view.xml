@@ -16,7 +16,7 @@
 						</Toolbar>
 						
 						<ObjectHeader intro="From JSON Model defined in component.js" 
-						introActive="true" binding="{categoryComp>/d/}" title="{categoryComp>CategoryName}"
+						introActive="true" binding="{categoryComp>/}" title="{categoryComp>CategoryName}"
 							number="{categoryComp>CategoryID}">
 							<attributes>
 								<ObjectAttribute text="{categoryComp>Description}"/>
