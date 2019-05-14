@@ -2,8 +2,27 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
+				<Page id="page" title="JSON Model from file">
+					<content>
+						<ObjectHeader intro="From JSON Model defined in Manifest" introActive="true" binding="{category>/}" title="{category>CategoryName}"
+							number="{category>CategoryID}">
+							<attributes>
+								<ObjectAttribute text="{category>Description}"/>
+							</attributes>
+						</ObjectHeader>
+						<Toolbar id="toolbar" active="true" design="Info" height="2rem" press="onToolbarPress">
+							<Text text="The following data is from the model defined in component.js"/>
+							<ToolbarSpacer/>
+						</Toolbar>
+						
+						<ObjectHeader intro="From JSON Model defined in component.js" 
+						introActive="true" binding="{categoryComp>/d/}" title="{categoryComp>CategoryName}"
+							number="{categoryComp>CategoryID}">
+							<attributes>
+								<ObjectAttribute text="{categoryComp>Description}"/>
+							</attributes>
+						</ObjectHeader>
+					</content>
 				</Page>
 			</pages>
 		</App>
